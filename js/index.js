@@ -11,7 +11,7 @@ function keyPress(e) {
     if (e.propertyName !== 'transform') return;
     this.classList.remove('playing')
   }
-  const keys = document.querySelectorAll('.key')
+  const keys = document.querySelectorAll('.key-js')
   keys.forEach(k => k.addEventListener('transitionend', removeTransition))
 }
 window.addEventListener('keydown', keyPress)

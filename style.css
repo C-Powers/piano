@@ -10,7 +10,7 @@ body,html {
 .flex-parent {
   display:flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -18,10 +18,15 @@ body,html {
   font-size: 2.5rem;
 }
 
+.keyboard {
+  margin-top: 10vh;
+  min-height: 90vh;
+}
+
 .keys {
   display: flex;
   flex: 1;
-  min-height: 90vh;
+  /*min-height: 90vh;*/
   align-items: center;
   justify-content: center;
 }
@@ -30,6 +35,32 @@ body,html {
   border: .1rem solid black;
   font-size: 1.5rem;
   padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  height: 25rem;
+  text-align: center;
+  color: black;
+  background: white;
+}
+
+.black-key {
+  border: .1rem solid black;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  margin-right: .1rem;
+  transition: all .07s ease;
+  width: 10rem;
+  height: 25rem;
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+.filler-key {
+  /*border: .1rem solid black;*/
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  margin-right: .1rem;
   transition: all .07s ease;
   width: 10rem;
   height: 25rem;
@@ -49,9 +80,16 @@ kbd {
   font-size: 4rem;
 }
 
-.sound {
+.key .sound {
   font-size: 1.7rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: black;
+}
+
+.black .sound {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: white;
 }
